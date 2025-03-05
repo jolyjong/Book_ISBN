@@ -1,4 +1,4 @@
-# BookList Application
+# BookList Application + Extended MovieList Application 
 
 This is a C++ program that implements a **singly linked list** of books. Each node in the list stores:
 - A **Title** (`std::string`)
@@ -27,4 +27,29 @@ Open a terminal and navigate to the folder that contains the three files. Then r
 
 ```bash
 g++ main.cpp booklist.cpp booklistmain.cpp
+```
+
+Extension: 
+Each node in the list stores:
+- A **Title** (`std::string`)
+- An **Director** (`std::string`)
+- A unique **Publishing Year** (`int`)
+Contains the ISBN code with modification to do binary search and sort
+
+
+The user interacts with a simple **menu** in `moviemain.cpp` that allows:
+1. Print all movies
+2. Add a new movie
+3. Delete a movie by ID
+4. Search for a movie by ID
+5. Find movies by a specific director
+6. Sort and display by release year
+8. Quit
+
+## How to Compile
+
+Open a terminal and navigate to the folder that contains the three files. Then run:
+
+```bash
+g++ main.cpp movielist.cpp moviemain.cpp
 ```
